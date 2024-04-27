@@ -202,7 +202,7 @@ class DeepVAREstimator(PyTorchEstimator):
                     target_field=FieldName.TARGET,
                 ),
                 AsNumpyArray(
-                    field=FieldName.FEAT_STATIC_CAT, expected_ndim=1, dtype=np.long
+                    field=FieldName.FEAT_STATIC_CAT, expected_ndim=1, dtype=np.longlong
                 ),
                 AsNumpyArray(field=FieldName.FEAT_STATIC_REAL, expected_ndim=1),
             ]
